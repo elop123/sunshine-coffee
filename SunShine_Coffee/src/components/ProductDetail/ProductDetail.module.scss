@@ -3,9 +3,12 @@
     margin: 0 auto;
     padding: 2rem;
     background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    
 }
 .productName {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 400;
     margin-bottom: 1rem;
     font-family: 'Licorice', cursive;
@@ -18,8 +21,8 @@
     margin-top: 1rem;
 }
 .productImage {
-    width: 480px;
-    height: 368px;
+    width: 450px;
+    height: 400px;
     border-radius: 8px;
     object-fit: cover;
     flex-shrink: 0;
@@ -27,8 +30,9 @@
 .descStyle {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-between; 
     max-width: 660px;
+    height: 400px;
 }
 .price{
     font-size: 24px;
@@ -51,9 +55,27 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: -0.5rem;
-}
+    margin-top: 0;
+     transition: all 0.25s ease;
 
+  &:hover {
+    background: #302626;
+    transform: translateY(-2px);
+  }
+}
+.roastCircles {
+    display: inline-flex;
+    gap: 4px;
+    margin-left: 5px;
+  }
+  
+  .roastCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+ 
 
 @media (max-width: 768px) {
     .productName {

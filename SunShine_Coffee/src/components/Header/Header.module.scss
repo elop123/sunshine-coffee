@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Righteous&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.headerStyle{
+    .headStyle{
+        height: 520px;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        //filter: brightness(0.53);
+        //opacity: 0.5;
+        
+    }
+    h2{
+        position: relative;
+        color: #FFFFFF;
+        font-family: 'Licorice';
+        font-size: 112px;
+        font-weight: 400;
+        align-items: center;
+        text-align: center;
+        margin-top: 0;
+        line-height: 200px;
+        &:first-of-type {
+            position: relative;
+            top: 160px; 
+          }
+      
+          &:last-of-type {
+            position: relative;
+            top: 60px; 
+          }
+    }
+}
+
+@media (max-width: 768px) {
+  .headerStyle {
+      height: 400px; 
+      margin-top: -9rem;
+      h2 {
+        font-size: 52px; 
+        
+        &:first-of-type {
+            margin-top: 60px;
+        }
+        &:last-of-type{
+          margin-top: -30px;
+        }
+    }
+  }
+
+ 
+}

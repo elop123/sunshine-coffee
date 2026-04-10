@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inspiration&family=Licorice&family=Righteous&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.footerStyle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    height: 196px;
+    gap: 3rem;
+    //margin-left: 2rem;
+    div{
+        margin-top: 2rem;
+    }
+    li{
+       list-style-type: none;
+       align-items: center;
+       font-size: 20px;
+       font-family: 'Inika';
+       cursor: pointer;
+    }
+    .links a {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .footerStyle {
+        grid-template-columns: 1fr; 
+        height: auto;
+        gap: 1.5rem;
+        text-align: center; 
+        padding: 1.5rem;
+    }
+
+    .footerStyle div {
+        margin-top: 1rem;
+    }
+
+    .footerStyle li {
+        font-size: 18px; 
+    }
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Licorice&family=Righteous&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+.navbarStyle {
+  padding: 10px;
+  height: 70px;
+  background-color:#111111;
+  width: 100%;
+  display: flex;
+  align-self:center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  .titleContainer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    .titleStyle {
+      margin-top: 8px;
+      color: #FFFFFF;
+      font-size: 48px;
+      font-family: "Inspiration", cursive;
+      font-weight: 400;
+      margin: 0;
+      align-self:center;
+    }
+    a {
+      text-decoration: none; 
+    &:hover, a:visited, a:active {
+      text-decoration: none; 
+    }
+  }}
+   .icons {
+   position: absolute;
+   right: 120px; 
+   display: flex;
+   gap: 1.5rem; 
+   width: 50px;  
+   height: 50px; 
+   margin-top: 0.5rem; 
+   img{
+  width: 50px;
+ height: 50px;
+ cursor: pointer;
+}
+ .cartCount {
+           position: absolute;
+           top: -5px;
+           right: -5px;
+           background-color: red;
+           color: #EFEFEF;
+           border-radius: 50%;
+           padding: 0.2rem 0.5rem;
+           font-size: 0.8rem;
+           font-weight: bold;
+          display: inline-block;
+          cursor: pointer;
+         }
+      
+   }
+  
+ 
+}
+
+.circle{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%);
+    height: 130px;
+    width: 250px;
+    border-radius: 0 0 150px 150px;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    }
+    
+    .coffeeLogo{
+     width: 118px;
+     height: auto;
+     margin-top: -70px;
+     color: #EFEFEF;
+    }
+
+    @media (max-width: 768px) {
+      .navbarStyle {
+        padding: 8px;
+        height: 60px;
+    
+        .titleContainer {
+          .titleStyle {
+            font-size: 32px; 
+          }
+        }
+        .icons {
+          right: 60px; 
+          gap: 2rem; 
+          img {
+            width: 25px; 
+            height: 25px;
+          }
+          .cartCount {
+            position: absolute;
+            top: -5px;
+            right: 5px;
+          }
+        }
+      }
+     
+      .circle {
+        top: 70px; 
+        height: 90px;
+        width: 180px;
+      }
+    
+      .coffeeLogo {
+        width: 70px; 
+      }
+    }
+        
+      
+
+   

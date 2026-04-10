@@ -1,0 +1,164 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: -670px;
+  height: 100%;
+  width: 620px;
+  background-color: #EFEFEF;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 20;
+  .cartTitle {
+    font-size: 80px;
+    font-family: 'Licorice', cursive;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+.showModal {
+  right: 0;
+}
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 60vh; 
+  overflow-y: auto;
+  padding-right: 10px;
+  .cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    .quantityControl {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 15px;
+    .text{
+      font-family: 'Inika';
+    }
+    button{
+      cursor: pointer;
+    }
+    .removeButton{
+      background-color: #fe2727;
+      border: none;
+      border-radius: 8px;
+      padding: 6px;
+      &:hover{
+        background-color: #f88888;
+      }
+    }
+      .quantityButton {
+        background-color: #dcdada;
+        color: #000;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.summary {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .summaryRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: bold;
+    .text{
+      font-family: 'Inika';
+      font-weight: 400;
+    }
+  }
+}
+.checkoutButton {
+  width: 202px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #1f1f1f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 25.5rem;
+  &:hover{
+    background-color: #B46538;
+    ;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+      width: 420px;
+      .cartTitle {
+          font-size: 48px;
+      }
+      .closeButton {
+          font-size: 20px;
+          margin-left: -1rem; 
+      }
+  }
+  .checkoutButton {
+      width:200px; 
+      padding: 12px;
+      font-size: 14px;
+      margin-left: 2px;
+      
+  }
+  .quantityControl {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+  .text{
+    font-family: 'Inika';
+  }
+  button{
+    cursor: pointer;
+    width: 22px;
+    margin: 8px;
+  }
+  .removeButton{
+    width: 60px;
+    background-color: #fe2727;
+    border: none;
+    border-radius: 8px;
+    //padding: 6px;
+    &:hover{
+      background-color: #f88888;
+    }
+  }
+    .quantityButton {
+      background-color: #dcdada;
+      color: #000;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  }
+ 
+}

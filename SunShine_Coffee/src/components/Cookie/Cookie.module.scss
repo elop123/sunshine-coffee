@@ -1,0 +1,60 @@
+.cookie_banner{
+    width:100%;
+    background-color: white;
+    height: 25vh;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    section{
+        p{
+            text-align: center;
+            font-size: larger;
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            border: solid 1px black;
+            background-color: black;
+            cursor: pointer;
+            color: white;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+        .acceptButton{
+            background-color: green;
+            &:hover{
+                background-color: lightgreen;
+            }
+        }
+        button:hover{
+            border: soliid 1px white;
+            background-color: rgb(76, 76, 76);
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .cookie_banner {
+        width:450px;
+        height: auto; 
+        grid-template-columns: 1fr; 
+        padding: 1rem;
+        gap: 1rem;
+        section {
+            align-items: center;
+            justify-content: center;
+            p {
+                font-size: 12px; 
+            }
+        }
+        
+    }
+    button {
+        width: 100px; 
+        height: 35px;
+        margin: 0.5rem;
+    }
+}

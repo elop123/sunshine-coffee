@@ -82,7 +82,7 @@ const imageMap = {
                       className={s.productImage} />
               </Link>
               <p className={s.price}>Roast: <span className={s.roastCircles}>{roastBeans(product.roast)}</span></p>
-              <p className={s.price}>{product.price} DKK</p>
+              <p className={s.price}><strong>{product.price} DKK</strong></p>
               <button className={s.buttonStyle} onClick={() => handleAddToCart(product)}>Add to cart</button>
             </div>
           ))}

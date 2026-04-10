@@ -3,7 +3,7 @@
 # Sunshine Coffee – E-commerce Web App
 
 Live Demo: https://sunshine-coffee.vercel.app/
-API: https://sunshine-coffee-api.onrender.com
+API: https://sunshine-coffee-api.onrender.com/products
 
 ## Overview
 Sunshine Coffee is a full-stack e-commerce web application where users can browse coffee products, view details, and add items to a shopping cart.

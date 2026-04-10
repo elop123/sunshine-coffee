@@ -6,7 +6,6 @@ export const Products = () => {
   return (
     <>
     <Product />
-    <Background />
     </>
   )
 }

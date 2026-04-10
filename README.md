@@ -40,6 +40,7 @@ This project demonstrates modern frontend and backend development practices, inc
 ## 📂 Project Structure
 ### Frontend
 SunShine_Coffee/
+
 ├── components/
 ├── pages/
 ├── Layout/

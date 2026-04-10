@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react'
 import s from './Product.module.scss'
 import { useCart } from 'react-use-cart'
 import { Link } from 'react-router-dom'
+import coffee1 from '../../assets/images/coffee1.jpg'
+import coffee2 from '../../assets/images/coffee2.jpg'
+import coffee3 from '../../assets/images/coffee3.jpg'
+
 
 export const Product = () => {
     const [products, setProducts] = useState([])
@@ -10,6 +14,13 @@ export const Product = () => {
     const [cart, setCart] = useState([])
     const { addItem } = useCart()
   
+const imageMap = {
+  'Espresso Blend': coffee1,
+  'Colombian Supremo': coffee2,
+  'Ethiopian Yirgacheffe': coffee3,
+  
+}
+
     useEffect(() => {
       const fetchProducts = async () => {
         try {
@@ -66,7 +77,9 @@ export const Product = () => {
               <h3 className={s.productName}>{product.name}</h3>
               </Link>
               <Link to={`/products/${product.id}`}>
-              <img src={product.image} alt={product.name} />
+              <img    src={imageMap[product.name]}
+                      alt={product.name}
+                      className={s.productImage} />
               </Link>
               <p className={s.price}>Roast: <span className={s.roastCircles}>{roastBeans(product.roast)}</span></p>
               <p className={s.price}>{product.price} DKK</p>

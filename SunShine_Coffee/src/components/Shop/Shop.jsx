@@ -11,7 +11,7 @@ export const Shop = () => {
         time at all. And the best part of it? It is totally organic, fair trade and sustainably 
         sourced. So get brewing</p>
     <Link to="/products">
-    <button className={s.buttonStyle}>Go to products</button>
+    <button className={s.buttonStyle}>Explore Products</button>
     </Link>
     </div>
    </section>

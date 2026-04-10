@@ -8,13 +8,13 @@ API: https://sunshine-coffee-api.onrender.com/products
 
 ## Overview
 Sunshine Coffee is a full-stack e-commerce web application where users can browse coffee products, view details, and add items to a shopping cart.
-This project demonstrates modern frontend and backend development practices, including API integration, state management, and responsive UI design.--
+This project demonstrates modern frontend and backend development practices, including API integration, state management, and responsive UI design.
 
 ## Features
 * Browse coffee products
 * View single product details
 * Add products to cart
-* Checkout flow (UI)
+* Checkout 
 * Full-stack integration (frontend + backend + database)
 * Responsive design
   
@@ -42,11 +42,12 @@ This project demonstrates modern frontend and backend development practices, inc
 ### Frontend
 SunShine_Coffee/
 
+
 ├── components/
 ├── pages/
 ├── Layout/
 ├── App.jsx
-```
+
 
 ### Backend
 Sunshine_CoffeeAPI/
@@ -55,14 +56,14 @@ Sunshine_CoffeeAPI/
 ├── routes/
 ├── config/
 ├── server.js
-```
+
 
 ## Installation & Setup
 ### Frontend
 
 npm install
 npm run dev
-```
+
 ### Backend
 
 npm install

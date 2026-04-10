@@ -13,7 +13,7 @@ export const Product = () => {
     useEffect(() => {
       const fetchProducts = async () => {
         try {
-          const response = await fetch('http://localhost:8081/products')
+         const response = await fetch('https://sunshine-coffee-api.onrender.com/products')
           if (!response.ok) {
             throw new Error('Failed to fetch products')
           }

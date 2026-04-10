@@ -36,8 +36,18 @@
            color: white;
            border-radius: 8px;
            cursor: pointer;
-           hover: 2b2b2b;
         }
+         &:hover {
+    background-color: #2b2b2b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  }
+}
     }
 }
     

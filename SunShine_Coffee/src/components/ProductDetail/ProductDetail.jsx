@@ -5,12 +5,15 @@ import { useCart } from 'react-use-cart'
 import coffee1 from '../../assets/images/coffee1.jpg'
 import coffee2 from '../../assets/images/coffee2.jpg'
 import coffee3 from '../../assets/images/coffee3.jpg'
+import coffee4 from '../../assets/images/coffee4.jpg'
+import coffee5 from '../../assets/images/coffee5.jpg'
 
 const imageMap = {
   'Espresso Blend': coffee1,
   'Colombian Supremo': coffee2,
   'Ethiopian Yirgacheffe': coffee3,
-  
+  'Brazilian Santos': coffee4,
+  'Guatemala Antigua': coffee5
 }
 
 export const ProductDetail = () => {

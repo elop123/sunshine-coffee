@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 export const Login = () => {
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
- const [loading, setLoading] = useState(false)
+const [loading, setLoading] = useState(false)
 const navigate = useNavigate()
 
   const handleLogin = async(e) => {
@@ -22,16 +22,26 @@ const navigate = useNavigate()
         body: JSON.stringify({ email, password })
       })
 
-      const data = await response.json()
+      const contentType = response.headers.get('content-type')
+      let data
+
+      if (contentType && contentType.includes('application/json')) {
+        data = await response.json()
+      } else {
+        const text = await response.text()
+        throw new Error(text || 'Server returned invalid response')
+      }
+
+      console.log('Login response:', data)
 
       if (!response.ok) {
-        throw new Error(data || 'Login failed')
+        throw new Error(typeof data === 'string' ? data : 'Login failed')
       }
 
       localStorage.setItem('accessToken', data.accessToken)
       localStorage.setItem('refreshToken', data.refreshToken)
       localStorage.setItem('userEmail', data.email)
-      localStorage.setItem('userId', data.id)
+      localStorage.setItem('userId', String(data.id))
 
       alert(`Login successful! Welcome ${data.email}`)
       navigate('/')
@@ -42,7 +52,6 @@ const navigate = useNavigate()
       setLoading(false)
     }
   }
-
   return (
     <div className={s.loginContainer}>
       <h2>Login</h2>

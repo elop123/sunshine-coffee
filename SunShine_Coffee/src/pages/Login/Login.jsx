@@ -59,7 +59,7 @@ try{
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit" className={s.buttonStyle} onClick={handleLogin}>Login</button>
+        <button type="submit" className={s.buttonStyle} >Login</button>
       </form>
      
     </div>

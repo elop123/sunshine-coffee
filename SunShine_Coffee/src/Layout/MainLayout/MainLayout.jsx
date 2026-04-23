@@ -12,7 +12,7 @@ const location = useLocation();
 console.log("Current Path:", location.pathname)
 
 // Check the current route 
-const isLoginPage = location.pathname === '/login'
+const isLoginPage = location.pathname === '/sign-in'
 const isShippingPage = location.pathname === '/shipping'
 const isCheckOutPage = location.pathname === '/checkout'
 

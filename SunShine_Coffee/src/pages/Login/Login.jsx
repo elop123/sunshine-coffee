@@ -43,7 +43,7 @@ const navigate = useNavigate()
       localStorage.setItem('userEmail', data.email)
       localStorage.setItem('userId', String(data.id))
       alert(`Login successful! Welcome ${data.email}`);
-      navigate('/sign-in')
+      navigate('/')
     } catch (err) {
       console.error('Login error:', err)
       alert(err.message || 'Server connection failed.')

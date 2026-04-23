@@ -28,7 +28,7 @@ const toggleModal = () =>{
             <img src={icon1} alt="shoppingCart" onClick={toggleModal}/>
             <span className={s.cartCount}>{totalItems}</span> 
             </div>
-            <Link to="/sing-in">
+            <Link to="/sign-in">
             <img src={icon2} alt="user" />
             </Link >
             </div>

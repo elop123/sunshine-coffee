@@ -83,11 +83,11 @@ npm start
 * Managing environment variables
 * 
 ## 📸 Preview
-![Homepage] [<img width="1894" height="858" alt="image" src="https://github.com/user-attachments/assets/4bf9e473-4dcc-42fa-889c-0cc87ed91881" />](https://github.com/elop123/sunshine-coffee/blob/main/SunShine_Coffee/public/Screenshot%202026-04-25%20200705.png)
+Homepage [<img width="1894" height="858" alt="image" src="https://github.com/user-attachments/assets/4bf9e473-4dcc-42fa-889c-0cc87ed91881" />](https://github.com/elop123/sunshine-coffee/blob/main/SunShine_Coffee/public/Screenshot%202026-04-25%20200705.png)
 )
-![Products page] [<img width="1272" height="858" alt="image" src="https://github.com/user-attachments/assets/349671f2-1d7c-4fd2-a0a4-9c195bd98ccc" />](https://github.com/elop123/sunshine-coffee/blob/main/SunShine_Coffee/public/Screenshot%202026-04-25%20200909.png)
+Products page [<img width="1272" height="858" alt="image" src="https://github.com/user-attachments/assets/349671f2-1d7c-4fd2-a0a4-9c195bd98ccc" />](https://github.com/elop123/sunshine-coffee/blob/main/SunShine_Coffee/public/Screenshot%202026-04-25%20200909.png)
 
-![Checkout] [<img width="988" height="790" alt="image" src="https://github.com/user-attachments/assets/f0c46fe0-a8e1-4f76-b0c8-8c824ab16b72" />](https://github.com/elop123/sunshine-coffee/blob/main/SunShine_Coffee/public/Screenshot%202026-04-25%20200958.png)
+Checkout [<img width="988" height="790" alt="image" src="https://github.com/user-attachments/assets/f0c46fe0-a8e1-4f76-b0c8-8c824ab16b72" />](https://github.com/elop123/sunshine-coffee/blob/main/SunShine_Coffee/public/Screenshot%202026-04-25%20200958.png)
 
 
 
